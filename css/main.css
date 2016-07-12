@@ -1,0 +1,90 @@
+/* CUSTOM STYLES */
+/*.navbar-clean {
+  background-color: #ffffff;
+  border-color:  #ffffff;
+}*/
+@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+  .navbar {
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header {
+    float: none !important;
+  }
+  .navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+/* .text-center-xs {
+  @media @bs-media-xs {  
+        .text-center;
+  }
+}
+
+.text-left-xs {
+  @media @bs-media-xs {  
+        .text-left;
+  }
+}
+
+.center-block-xs {
+  @media @bs-media-xs {  
+        .center-block;
+  }
+}
+
+.center-block-md {
+  @media @bs-media-md {  
+        .center-block;
+  }
+} */
+@media only screen and (min-width:768px) {
+  .fixed-sm-above {
+    position: fixed;
+  }
+}
+@media only screen and (min-width:768px) {
+  .relative-sm-above {
+    position: relative;
+  }
+}
+/* IDEA FOR SPECIFITY
+col-med-1.col-fixed {
+    position: fixed! important;
+}
+*/

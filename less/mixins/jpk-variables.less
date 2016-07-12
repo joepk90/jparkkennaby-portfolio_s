@@ -1,7 +1,4 @@
 
-//Variables
-
-
 @bs-media-xs: ~"only screen and (max-width:767px)";
 
 @bs-media-sm-and-above: ~"only screen and (min-width:768px)";
@@ -15,8 +12,27 @@
 @bs-media-lg: ~"only screen and (min-width:1200px)";
 
 
+.text-center-xs {
+  @media @bs-media-xs {  
+        .text-center;
+  }
+}
 
+.text-left-xs {
+  @media @bs-media-xs {  
+        .text-left;
+  }
+}
 
+.center-block-xs {
+  @media @bs-media-xs {  
+        .center-block;
+  }
+}
 
-
+.fixed-md {
+	@media @bs-media-md-and-above {
+    .fixed;
+}
+}
 

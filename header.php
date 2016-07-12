@@ -17,9 +17,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-
+<!--
 <link rel='stylesheet'  href='/portfolio/wp-content/themes/jparkkennaby-portfolio_s/css/bootstrap.min.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='/portfolio/wp-content/themes/jparkkennaby-portfolio_s/css/bootstrap-theme.min.css' type='text/css' media='all' />
+-->
+
 <?php wp_head(); ?>
 <!-- CHANGE THIS - Stylesheets should be enqueued in functions.php - look at wordpress guide -->
 </head>
@@ -29,7 +31,7 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'jparkkennaby-portfolio_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="site-branding" style="display: none;">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -45,15 +47,15 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation" role="navigation" style="display: none;">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jparkkennaby-portfolio_s' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<div class="content-padding">
 	<div id="content" class="container site-content">
 		<div class="row">
-
-			<div class="col-sm-4">
+			<div class="col-sm-4 fixed-sm-above">
 			<nav class="navbar navbar-default" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
