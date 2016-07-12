@@ -4,5 +4,15 @@
 		{
 			"path": "/"
 		}
-	]
+	],
+	"settings":
+    {
+        "less2css":
+        {
+            "lessBaseDir": "./less/",
+            "outputDir": "./css/",
+            "outputFile": "bootstrap.min.css",
+            "minify": true,
+        }
+    }
 }
