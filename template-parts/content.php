@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col-md-6">
+<div class="col-md-6" >
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'whatever-you-want' ); ?> style="padding:0 15px;">
 		
 		<?php
@@ -54,3 +54,4 @@
 		</footer><!-- .entry-footer -->
 	</article><!-- #post-## -->
 </div>
+

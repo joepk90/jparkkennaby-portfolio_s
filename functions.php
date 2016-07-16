@@ -102,16 +102,14 @@ add_action( 'widgets_init', 'jparkkennaby_portfolio_s_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jparkkennaby_portfolio_s_scripts() {
-	wp_enqueue_style( 'jparkkennaby-portfolio_s-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'jparkkennaby-portfolio_s-style', get_stylesheet_uri() );
 
 /**
  * Open Custom Insert.
  */
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap.min.css',array(),'3.3.4' );
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/css/bootstrap-theme.min.css',array(),'3.3.4' );
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/js/bootstrap.min.js',array(),'3.3.6' );
-//	wp_enqueue_style( 'font-awesome', get_template_directory_uri() .'/css/font-awesome-4.3.0/css/font-awesome.min.css',array(),'4.0.3' );
+	wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() .'/css/bootstrap-theme.min.css',array(),'3.3.4' );
  
 if( !is_admin()){
     wp_deregister_script( 'jquery' );
