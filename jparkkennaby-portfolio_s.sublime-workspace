@@ -119,7 +119,7 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 4737,
+				"buffer_size": 5514,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,7 +127,15 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1541,
+				"buffer_size": 1586,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/extended-utilities.less",
+			"settings":
+			{
+				"buffer_size": 4059,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,15 +143,20 @@
 			"file": "template-parts/content.php",
 			"settings":
 			{
-				"buffer_size": 1612,
+				"buffer_size": 1569,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 87.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -159,7 +172,11 @@
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -170,6 +187,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/"
+	],
 	"file_history":
 	[
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/footer.php",
@@ -329,23 +350,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "header.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4737,
+						"buffer_size": 5514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1283,
-								1605
+								3729,
+								3729
 							]
 						],
 						"settings":
@@ -354,25 +376,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 333.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "index.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1541,
+						"buffer_size": 1586,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1239,
-								1235
+								0,
+								0
 							]
 						],
 						"settings":
@@ -380,26 +404,58 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 25.0,
-						"translation.y": 250.0,
+						"translation.x": 0.0,
+						"translation.y": 304.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "template-parts/content.php",
+					"file": "less/extended-utilities.less",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1612,
+						"buffer_size": 4059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								415,
-								415
+								3651,
+								3651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2820.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "template-parts/content.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -407,10 +463,11 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 10.0,
-						"translation.y": 103.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -447,6 +504,12 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "jparkkennaby-portfolio_s.sublime-project",
 	"replace":
 	{
 		"height": 64.0
@@ -455,6 +518,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -463,15 +527,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 233.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

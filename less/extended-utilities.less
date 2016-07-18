@@ -1,0 +1,402 @@
+
+//Extended Utilities
+
+
+// Responsive Text-Size
+
+.hero-title {
+  @media @bs-media-md-and-above {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+}
+
+.hero-title-sm {
+  @media @bs-media-sm {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+}
+.hero-title-xs {
+  @media @bs-media-xs {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+}
+
+@media @bs-media-xs {
+  .h1-xs {.h1}
+  .h2-xs {.h2}
+  .h3-xs {.h3}
+  .h4-xs {.h4}
+  .h5-xs {.h5}
+  .h6-xs {.h6}
+}
+@media @bs-media-sm {
+  .h1-sm {.h1}
+  .h2-sm {.h2}
+  .h3-sm {.h3}
+  .h4-sm {.h4}
+  .h5-sm {.h5}
+  .h6-sm {.h6}
+}
+@media @bs-media-md {
+  .h1-md {.h1}
+  .h2-md {.h2}
+  .h3-md {.h3}
+  .h4-md {.h4}
+  .h5-md {.h5}
+  .h6-md {.h6}
+}
+@media @bs-media-lg {
+  .h1-lg {.h1}
+  .h2-lg {.h2}
+  .h3-lg {.h3}
+  .h4-lg {.h4}
+  .h5-lg {.h5}
+  .h6-lg {.h6}
+}
+
+.small-xs {
+  @media @bs-media-xs {
+    .small
+  }
+}
+.small-sm {
+  @media @bs-media-sm {
+    .small
+  }
+}
+.small-md {
+  @media @bs-media-md {
+    .small
+  }
+}
+.small-lg {
+  @media @bs-media-lg {
+    .small
+  }
+}
+
+
+.h2-xs {
+  @media @bs-media-xs {  
+        .h2
+  }
+}
+
+
+// Responsive Alignment
+
+.text-center-xs {
+  @media @bs-media-xs {  
+        .text-center;
+  }
+}
+
+.text-left-xs {
+  @media @bs-media-xs {  
+        .text-left;
+  }
+}
+
+.center-block-xs {
+  @media @bs-media-xs {  
+        .center-block;
+  }
+}
+
+
+.center-block-md {
+  @media @bs-media-md {  
+        .center-block;
+  }
+} 
+
+
+.text-left-xs {
+  @media @bs-media-xs {  
+        .text-left;
+  }
+}
+
+
+
+// Responsive Margins
+
+.margin-none {
+  margin:0 !important;
+}
+.margin-top-none {
+  margin-top:0 !important;
+}
+.margin-bottom-none {
+  margin-bottom:0 !important;
+}
+@media @bs-media-xs {
+  .margin-none-xs {
+    .margin-none;
+  }
+  .margin-top-none-xs {
+    .margin-top-none;
+  }
+  .margin-bottom-none-xs {
+    .margin-bottom-none;
+  }
+}
+
+@media @bs-media-sm-and-above {
+  .margin-none-sm-and-above {
+    .margin-none;
+  }
+  .margin-top-none-sm-and-above {
+    .margin-top-none;
+  }
+  .margin-bottom-none-sm-and-above {
+    .margin-bottom-none;
+  }
+}
+
+/*.margin-primary,
+.margin-top-primary,
+.margin-bottom-primary,
+.margin-secondary,
+.margin-top-secondary,
+.margin-bottom-secondary {
+  display:inline-block;
+}*/
+.margin-primary,
+.margin-bottom-primary,
+.margin-secondary,
+.margin-bottom-secondary {
+  margin-bottom: (@line-height-computed / 2);
+}
+.margin-primary,
+.margin-top-primary {
+  margin-top: @line-height-computed;
+}
+.margin-secondary,
+.margin-top-secondary {
+  margin-top: (@line-height-computed / 2);
+}
+
+
+// Margin Loops
+
+@iterations: 50;
+/* the mixin test if counter has reached 0 */
+.mixin-simple-loop (@i) when (@i > 0) {  
+    /* print a class with @i variable in the class name */
+    .margin_top_@{i}{
+      margin-top:(@i*1px);
+    }
+    /* print another class */
+    .margin_bottom_@{i}{    
+      margin-bottom:(@i*1px);
+    }
+    /* print another class */
+    .margin_left_@{i}{    
+      margin-left:(@i*1px);
+    }
+    /* print another class */
+    .margin_right_@{i}{    
+      margin-right:(@i*1px);
+    }        
+   /* the mixin calls itself while lowering the counter @i */
+  .mixin-simple-loop(@i - 1);
+}
+// call the mixin
+.mixin-simple-loop(@iterations);
+
+
+// Reponsive Margin Loops
+
+@media @bs-media-xs {
+@iterations: 50;
+/* the mixin test if counter has reached 0 */
+.mixin-simple-loop (@i) when (@i > 0) {  
+    /* print a class with @i variable in the class name */
+    .margin_top_xs_@{i}{
+      margin-top:(@i*1px);
+    }
+    /* print another class */
+    .margin_bottom_xs_@{i}{    
+      margin-bottom:(@i*1px);
+    }
+    .margin_left_xs_@{i}{    
+      margin-left:(@i*1px);
+    }
+    /* print another class */
+    .margin_right_xs_@{i}{    
+      margin-right:(@i*1px);
+    }         
+   /* the mixin calls itself while lowering the counter @i */
+  .mixin-simple-loop(@i - 1);
+}
+// call the mixin
+.mixin-simple-loop(@iterations);
+} 
+
+
+
+// Column Positioning
+
+//********************************************************************
+
+// Bootstrap Clearfix
+
+// Column clearing can be achieved through logic - either closing and re-opening the .row or using clearfix divs
+// The below CSS has a few requirement but is otherwise easier to set up
+
+// Apply only to parent row of consistent evenly spaced columns
+// Example <div class="row bs-columns-clearfix">
+// Columns should have specific sizing classes for all sizes, col-x-xs, col-x-sm, col-x-md, col-x-lg
+
+.bs-columns-clearfix {
+  /* Tablet */
+  @media @bs-media-xs {
+
+    /* Column clear fix */
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1),
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1),
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1){
+      clear: none;
+    }
+    .col-xs-1:nth-child(12n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1){
+      clear: left;
+    }
+  }
+
+  /* Tablet */
+  @media @bs-media-sm {
+
+    /* Column clear fix */
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1),
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1),
+    .col-xs-1:nth-child(12n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1){
+      clear: none;
+    }
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1){
+      clear: left;
+    }
+  }
+
+
+  /* Medium Desktop */
+  @media @bs-media-md {
+
+    /* Column clear fix */
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1),
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1),
+    .col-xs-1:nth-child(12n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1){
+      clear: none;
+    }
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1){
+      clear: left;
+    }
+  }
+
+
+  /* Large Desktop */
+  @media @bs-media-lg {
+
+    /* Column clear fix */
+    .col-md-1:nth-child(12n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1),
+    .col-sm-1:nth-child(12n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1),
+    .col-xs-1:nth-child(12n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1){
+      clear: none;
+    }
+    .col-lg-1:nth-child(12n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1){
+      clear: left;
+    }
+  }
+}
+
+
+
+// Responsive Positioning
+
+.clear-none-xs {
+  @media @bs-media-xs {  
+        .clear-none;
+  }
+}
+
+.clear-none {
+  clear: none;
+}
+
+.fixed-sm-above {
+  @media @bs-media-sm-and-above {
+    .fixed;
+}
+}
+
+.fixed {
+    position: fixed;
+}
+

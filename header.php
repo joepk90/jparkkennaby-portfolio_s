@@ -65,15 +65,23 @@
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="#">Portfolio</a>
+			    <div class="navbar-vertical-brand">
+          <img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg"/>
+		<h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
+        <p class="h4 text-center hidden-xs">Junior Digital Designer</p>
+        <p class="h5 text-center hidden-xs">jparkkennaby@gmail.com</p>
+        <p class="h5 text-center hidden-xs">07588 383610</p>
+        <p class="h5 text-center hidden-xs">Old Street, London</p>
+			    </div>
 			  </div>
 
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#">Link</a></li>
-			      <li><a href="#">Link</a></li>
-			      <li class="dropdown">
+			    <h2 class="h4 text-left hidden-xs margin_left_15">Portfolio</h2>
+			      <li class="active"><a href="/portfolio/category/front-end-development/">Front End Development</a></li>
+			      <li><a href="/portfolio/category/design/">Design</a></li>
+			      <!--<li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Action</a></li>
@@ -82,15 +90,19 @@
 			          <li><a href="#">Separated link</a></li>
 			          <li><a href="#">One more separated link</a></li>
 			        </ul>
-			      </li>
+			      </li>-->
+			    
 			    </ul>
-			    <form class="navbar-form navbar-left" role="search">
+			      <div class="text-center margin_top_15 margin_bottom_15 hidden">
+					<a href="www.joe.parkkennaby.com" class="text-center btn btn-sm btn-info" >View My CV</a></span>
+					</div>
+			     <!--<form class="navbar-form navbar-left" role="search">
 			      <div class="form-group">
 			        <input type="text" class="form-control" placeholder="Search">
 			      </div>
 			      <button type="submit" class="btn btn-default">Submit</button>
 			    </form>
-			    <ul class="nav navbar-nav navbar-right">
+			     <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#">Link</a></li>
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -101,7 +113,7 @@
 			          <li><a href="#">Separated link</a></li>
 			        </ul>
 			      </li>
-			    </ul>
+			    </ul>-->
 			  </div><!-- /.navbar-collapse -->
 			</nav>
 			        <!--<h3 class="portfolio">Portfolio</h3>

@@ -13,7 +13,7 @@
             "outputDir": "./css/",
             "outputFile": "bootstrap.min.css",
             "minify": true,
-            "main_file": "bootstrap.less",
+            "main_file": "bootstrap.less"
         }
-    
-}}
+    }
+}
