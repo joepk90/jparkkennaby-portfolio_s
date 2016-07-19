@@ -18,8 +18,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					single_term_title( '<h1 class="page-title">', '</h1>' );
+					single_term_title( '<h1 class="page-title">', ' Work</h1>' );
 					the_archive_description( '<h1 class="taxonomy-description">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
