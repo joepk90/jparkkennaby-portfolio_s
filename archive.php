@@ -18,9 +18,9 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title hidden">', '</h1>' );
 					single_term_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<h1 class="taxonomy-description">', '</h1>' );
+					the_archive_description( '<h1 class="taxonomy-description hidden">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
 

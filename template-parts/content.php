@@ -10,6 +10,7 @@
 ?>
 
 <div class="col-xs-12 col-xs-12 col-md-6 col-lg-6" >
+<div class="margin_top_40 margin_bottom_40 margin_left_20 margin_right_20">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 		<?php
@@ -53,5 +54,6 @@
 			<?php jparkkennaby_portfolio_s_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</article><!-- #post-## -->
+	</div>
 </div>
 

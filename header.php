@@ -69,8 +69,8 @@
           <img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg"/>
 		<h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
         <p class="h4 text-center hidden-xs">Digital Designer</p>
-        <p class="h5 text-center hidden-xs">jparkkennaby@gmail.com</p>
-        <p class="h5 text-center hidden-xs">07588 383610</p>
+        <p class="h5 text-center hidden-xs"><a href="mailto:jparkkennaby@gmail.com">jparkkennaby@gmail.com</a></p>
+        <p class="h5 text-center hidden-xs"><a href="tel:07588 383610">07588 383610</a></p>
         <p class="h5 text-center hidden-xs">Old Street, London</p>
 			    </div>
 			  </div>
@@ -79,7 +79,7 @@
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
 			    <h2 class="h4 text-left hidden-xs margin_left_15"><a href="/portfolio/">Portfolio</a></h2>
-			      <li class="active"><a href="/portfolio/category/front-end-development/">Front End Development</a></li>
+			      <li> <a href="/portfolio/category/front-end-development/">Front End Development</a></li>
 			      <li><a href="/portfolio/category/design/">Design</a></li>
 			      <!--<li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
