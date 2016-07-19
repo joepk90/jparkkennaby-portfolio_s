@@ -30,7 +30,7 @@ get_header(); ?>
 				endif;
 
 				if ( ! is_single() ) : ?>
-					<div class="row">
+					<div class="row bs-columns-clearfix">
 				<?php
 				endif;
 

@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col-md-6" >
+<div class="col-xs-12 col-xs-12 col-md-6 col-lg-6" >
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 		<?php

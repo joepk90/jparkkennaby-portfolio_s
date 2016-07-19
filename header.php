@@ -54,8 +54,8 @@
 	</header><!-- #masthead -->*/ ?>
 	<div class="content-padding">
 	<div id="content" class="container site-content">
-		<div class="row">
-			<div class="col-sm-4 fixed-sm-above">
+		<div class="row bs-columns-clearfix">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 fixed-sm-above">
 			<nav class="navbar navbar-default" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
