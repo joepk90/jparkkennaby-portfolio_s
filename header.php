@@ -54,8 +54,8 @@
 	</header><!-- #masthead -->*/ ?>
 	<div class="content-padding">
 	<div id="content" class="container site-content">
-		<div class="row bs-columns-clearfix">
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 fixed-sm-above">
+		<div class="row">
+			<div class="col-sm-4 fixed-sm-above">
 			<nav class="navbar navbar-default" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
@@ -68,7 +68,7 @@
 			    <div class="navbar-vertical-brand">
           <img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg"/>
 		<h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
-        <p class="h4 text-center hidden-xs">Junior Digital Designer</p>
+        <p class="h4 text-center hidden-xs">Digital Designer</p>
         <p class="h5 text-center hidden-xs">jparkkennaby@gmail.com</p>
         <p class="h5 text-center hidden-xs">07588 383610</p>
         <p class="h5 text-center hidden-xs">Old Street, London</p>
