@@ -78,7 +78,7 @@
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
-			    <h2 class="h4 text-left hidden-xs margin_left_15">Portfolio</h2>
+			    <h2 class="h4 text-left hidden-xs margin_left_15"><a href="/portfolio/">Portfolio</a></h2>
 			      <li class="active"><a href="/portfolio/category/front-end-development/">Front End Development</a></li>
 			      <li><a href="/portfolio/category/design/">Design</a></li>
 			      <!--<li class="dropdown">
