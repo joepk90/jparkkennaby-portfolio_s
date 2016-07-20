@@ -18,14 +18,9 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-<<<<<<< HEAD
 					the_archive_title( '<h1 class="page-title hidden">', '</h1>' );
 					single_term_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<h1 class="taxonomy-description hidden">', '</h1>' );
-=======
-					single_term_title( '<h1 class="page-title">', ' Work</h1>' );
-					the_archive_description( '<h1 class="taxonomy-description">', '</h1>' );
->>>>>>> origin/master
+					the_archive_description( '<div class="archive-description hidden">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 

@@ -12,7 +12,14 @@
 ?>
 		</div><!-- .row -->
 	</div><!-- #content -->
-	<div class="container" style=""><div class="row"><div class="col-sm-7 col-sm-push-5 col-md-8 col-md-push-4" style="height: 800px; border: solid 1px #000000"></div></div></div>
+	<div class="container" style="">
+	<div class="row">
+	<div class="col-sm-7 col-sm-push-5 col-md-8 col-md-push-4" style="height: 800px; border: solid 0px #000000">
+		
+	</div>
+	</div>
+	</div>
+
 </div><!-- #content-padding -->
 <br><br><br>
 	<?php /* <footer id="colophon" class="site-footer" role="contentinfo">
