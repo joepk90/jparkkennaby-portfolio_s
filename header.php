@@ -68,7 +68,7 @@
 			    <div class="navbar-vertical-brand">
           <img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg"/>
 		<h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
-        <p class="h4 text-center hidden-xs">Digital Designer</p>
+        <p class="h4 text-center hidden-xs">Digital Designer and Developer</p>
         <p class="h5 text-center hidden-xs"><a href="mailto:jparkkennaby@gmail.com">jparkkennaby@gmail.com</a></p>
         <p class="h5 text-center hidden-xs"><a href="tel:07588 383610">07588 383610</a></p>
         <p class="h5 text-center hidden-xs">Old Street, London</p>

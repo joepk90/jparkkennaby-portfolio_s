@@ -151,7 +151,7 @@
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 1187,
+				"buffer_size": 1201,
 				"line_ending": "Unix"
 			}
 		},
@@ -380,7 +380,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -409,7 +409,7 @@
 						"translation.y": 829.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -438,7 +438,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -496,7 +496,7 @@
 						"translation.y": 79.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -505,15 +505,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1187,
+						"buffer_size": 1201,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								460,
-								460
+								355,
+								355
 							]
 						],
 						"settings":
@@ -525,7 +525,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
