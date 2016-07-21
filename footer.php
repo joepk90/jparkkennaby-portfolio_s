@@ -12,7 +12,7 @@
 ?>
 		</div><!-- .row -->
 	</div><!-- #content -->
-	<div class="container" style="">
+	<div class="container" style="display: none;">
 	<div class="row">
 	<div class="col-sm-7 col-sm-push-5 col-md-8 col-md-push-4" style="height: 800px; border: solid 0px #000000">
 		
