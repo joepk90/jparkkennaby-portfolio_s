@@ -116,14 +116,6 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 5791,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "index.php",
 			"settings":
 			{
@@ -135,7 +127,7 @@
 			"file": "template-parts/content.php",
 			"settings":
 			{
-				"buffer_size": 1703,
+				"buffer_size": 1931,
 				"line_ending": "Unix"
 			}
 		},
@@ -156,18 +148,18 @@
 			}
 		},
 		{
-			"file": "less/main.less",
+			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 2420,
+				"buffer_size": 119,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "less/extended-utilities.less",
+			"file": "less/main.less",
 			"settings":
 			{
-				"buffer_size": 7608,
+				"buffer_size": 4526,
 				"line_ending": "Unix"
 			}
 		}
@@ -214,14 +206,15 @@
 	"expanded_folders":
 	[
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/",
-		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s//inc",
-		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s//template-parts"
+		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s//js"
 	],
 	"file_history":
 	[
+		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/header.php",
+		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/functions.php",
+		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/less/extended-utilities.less",
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/archive.php",
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/footer.php",
-		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/functions.php",
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/less/bootstrap.less",
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/js/customizer.js",
 		"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s/less/jpk-variables.less",
@@ -279,9 +272,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/parkkennaby/Projects/vagrant1/public/portfolio/wp-content/themes/jparkkennaby-portfolio_s//less"
 		]
 	},
 	"find_state":
@@ -289,6 +283,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
+			"transition",
 			"screen-reader-text",
 			"style",
 			"default",
@@ -380,40 +376,11 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5791,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3843,
-								3843
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 829.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "index.php",
 					"semi_transient": false,
 					"settings":
@@ -425,8 +392,37 @@
 						"selection":
 						[
 							[
-								508,
-								449
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 92.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "template-parts/content.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								725,
+								725
 							]
 						],
 						"settings":
@@ -438,40 +434,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "template-parts/content.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1703,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								522,
-								522
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 169.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "archive.php",
 					"semi_transient": false,
 					"settings":
@@ -493,14 +460,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 79.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "footer.php",
 					"semi_transient": false,
 					"settings":
@@ -525,7 +492,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -534,15 +531,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2420,
+						"buffer_size": 4526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1641,
-								1641
+								3208,
+								3208
 							]
 						],
 						"settings":
@@ -552,40 +549,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1464.0,
+						"translation.y": 2655.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "less/extended-utilities.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4368,
-								4349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3278.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

@@ -13,11 +13,9 @@
 <div class="margin_top_40 margin_bottom_40 margin_left_20 margin_right_20">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-		<?php
-			if ( has_post_thumbnail() ) : ?>
-			<img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive">
-		<?php
-			endif; ?>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<a href="<?php echo esc_url( get_permalink() ); ?>" target="_blank"><div class="view view-first" style="background: #fff url(<?php the_post_thumbnail_url(); ?>) no-repeat center center;"><img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive zoom"/><div class="mask"></div></div> </a>
+		<?php endif; ?>
 
 		<header class="entry-header">
 			<?php
@@ -36,8 +34,7 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php
-				the_content( sprintf(
+			<?php the_content( sprintf(
 					/* translators: %s: Name of current post. */
 					wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'jparkkennaby-portfolio_s' ), array( 'span' => array( 'class' => array() ) ) ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
