@@ -13,7 +13,7 @@ get_header(); ?>
 	
 		<main id="main" class="site-main" role="main">
 
-		<?php
+		<?php query_posts( 'posts_per_page=-1' );
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
