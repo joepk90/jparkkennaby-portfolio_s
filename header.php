@@ -55,84 +55,48 @@ $active
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->*/ ?>
 	<div class="content-padding">
-	<div id="content" class="container site-content">
-		<div class="row">
-			<div class="col-sm-4 fixed-sm-above">
-				<div id="sidebar">
-					<div>
-						<div id="sidebarprofile">
-							
-						</div>
-							<nav class="navbar navbar-default" role="navigation">
-							  <!-- Brand and toggle get grouped for better mobile display -->
-							  <div class="navbar-header">
-							    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							      <span class="sr-only">Toggle navigation</span>
-							      <span class="icon-bar"></span>
-							      <span class="icon-bar"></span>
-							      <span class="icon-bar"></span>
-							    </button>
-			    				<div class="navbar-vertical-brand">
-		          					<img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg"/>
-									<h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
-							        <p class="h4 text-center hidden-xs">Digital Designer and Developer</p>
-							        <p class="h5 text-center hidden-xs"><a href="mailto:jparkkennaby@gmail.com">joeparkkennaby@gmail.com</a></p>
-							        <p class="h5 text-center hidden-xs"><a href="tel:07588 383610">07588 383610</a></p>
-							        <p class="h5 text-center hidden-xs">Old Street, London</p>
-							    </div>
-							  </div>
-
-			  <!-- Collect the nav links, forms, and other content for toggling -->
-			  <div class="collapse navbar-collapse navbar-ex1-collapse">
-			    <ul class="nav navbar-nav">
-			    <h2 class="h4 text-left hidden-xs margin_left_15"><a href="/portfolio/">Portfolio</a></h2>
-			      <li <?php if ( is_category( '3' ) ) echo 'class="active"' ?>> <a href="/portfolio/category/front-end-development/">Front End Development</a></li>
-			      <li <?php if ( is_category( '2' ) ) echo 'class="active"' ?>><a href="/portfolio/category/design/">Design</a></li>
-			      <!--<li class="dropdown">
-			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-			        <ul class="dropdown-menu">
-			          <li><a href="#">Action</a></li>
-			          <li><a href="#">Another action</a></li>
-			          <li><a href="#">Something else here</a></li>
-			          <li><a href="#">Separated link</a></li>
-			          <li><a href="#">One more separated link</a></li>
-			        </ul>
-			      </li>-->
-			    
-			    </ul>
-			      <div class="text-center margin_top_15 margin_bottom_15 hidden">
-					<span><a href="www.joe.parkkennaby.com" class="text-center btn btn-sm btn-info" >View My CV</a></span>
+		<div id="content" class="container site-content">
+			<div class="row">
+				<div class="col-sm-4 fixed-sm-above">
+					<div id="sidebar">						
+						<nav class="navbar navbar-default" role="navigation">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div id="sidebarprofile"></div>
+						    <div class="sidebarcontent">
+						    	<div class="navbar-header">			    	
+						    	
+							        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							            <span class="sr-only">Toggle navigation</span>
+							            <span class="icon-bar"></span>
+							            <span class="icon-bar"></span>
+							            <span class="icon-bar"></span>
+							        </button>
+							        <div class="navbar-vertical-brand">
+							            <img class="img-responsive img-circle center-block hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/profilephoto100.jpg" />
+							            <h1 class="h3 text-center text-left-xs small-xs clear-none-xs margin_top_xs_5 margin-bottom-none-xs">Joe Park-Kennaby</h1>
+							            <p class="h4 text-center hidden-xs">Digital Designer and Developer</p>
+							            <p class="h5 text-center hidden-xs"><a href="mailto:jparkkennaby@gmail.com">joeparkkennaby@gmail.com</a></p>
+							            <p class="h5 text-center hidden-xs"><a href="tel:07588 383610">07588 383610</a></p>
+							            <p class="h5 text-center hidden-xs">Old Street, London</p>
+							        </div>
+						        
+						    	</div>
+						    	<!-- Collect the nav links, forms, and other content for toggling -->
+						    	<div class="collapse navbar-collapse navbar-ex1-collapse">
+						    	
+							        <ul class="nav navbar-nav">
+							            <h2 class="h4 text-left hidden-xs margin_left_15"><a href="/portfolio/">Portfolio</a></h2>
+							            <li <?php if ( is_category( '3' ) ) echo 'class="active"' ?>> <a href="/portfolio/category/front-end-development/">Front End Development</a></li>
+							            <li <?php if ( is_category( '2' ) ) echo 'class="active"' ?>><a href="/portfolio/category/design/">Design</a></li>
+							        </ul>							        
+							        <div class="text-center margin_top_15 margin_bottom_15 hidden">
+							            <span><a href="www.joe.parkkennaby.com" class="text-center btn btn-sm btn-info" >View My CV</a></span>
+							        </div>
+						        
+						    	</div>
+						    </div>
+						    <!-- /.navbar-collapse -->
+						</nav>
 					</div>
-			     <!--<form class="navbar-form navbar-left" role="search">
-			      <div class="form-group">
-			        <input type="text" class="form-control" placeholder="Search">
-			      </div>
-			      <button type="submit" class="btn btn-default">Submit</button>
-			    </form>
-			     <ul class="nav navbar-nav navbar-right">
-			      <li><a href="#">Link</a></li>
-			      <li class="dropdown">
-			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-			        <ul class="dropdown-menu">
-			          <li><a href="#">Action</a></li>
-			          <li><a href="#">Another action</a></li>
-			          <li><a href="#">Something else here</a></li>
-			          <li><a href="#">Separated link</a></li>
-			        </ul>
-			      </li>
-			    </ul>-->
-			  </div><!-- /.navbar-collapse -->
-			</nav>
-			</div>
-			</div>
-			<div class="post-destination"></div>
-			
-
-			        <!--<h3 class="portfolio">Portfolio</h3>
-			        <p class="portfolio">Joe Park-Kennaby's Portfolio</p>
-			          <ul>
-			            <li>efef</li>
-			            <li>eece</li>
-			            <li>efe</li>
-			            <li>eew</li>-->
-			 </div>
+					<div class="post-destination"></div>
+				</div>

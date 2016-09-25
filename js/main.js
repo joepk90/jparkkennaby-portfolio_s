@@ -1,4 +1,21 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
+
+    $('.post-head').hover(
+        function() {
+            var content = $(this).find('.post-info').clone();
+            $('.sidebarcontent').css('visibility','hidden');
+            $('#sidebarprofile').html(content);
+        }, function() {
+            $('.sidebarcontent').css('visibility','visible');
+            $('#sidebarprofile').empty();  
+        });
+
+}); */
+
+
+/*.toggle( "slow", function() {
+    // Animation complete.
+  }); */
 
     /* $('.post-head').mouseenter(function() {
         $(this).children().children('.post-info').appendTo('#sidebar');
@@ -11,21 +28,3 @@ $(document).ready(function(){
         $('#sidebar').children('.post-info').appendTo('.post-holder')
         $('#sidebarprofile').toggleClass('hidden');
     }); */
-
-    $('.post-head').hover( function() {
-        var content = $(this).find('.post-info');
-        var container = $('#sidebar');
-
-        console.log(content);
-
-        container.html(content);
-
-        /* .appendTo('#sidebar'); */
-        $('#sidebarprofile').toggleClass('hidden');  
-        $('#sidebar').children('.post-info').toggleClass('hidden');      
-    });
-
-});
-
-
-// look into cloning
